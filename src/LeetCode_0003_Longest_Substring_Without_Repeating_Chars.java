@@ -20,9 +20,12 @@ import java.util.HashMap;
  * Output: 3
  * Explanation: The answer is "wke", with the length of 3.
  * Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+ * <p>
+ * Constraints:
+ * 0 <= s.length <= 5 * 104
+ * s consists of English letters, digits, symbols and spaces.
  **/
-
-public class LeetCode_3_LongestSubstringWithoutRepeatingChars {
+public class LeetCode_0003_Longest_Substring_Without_Repeating_Chars {
     public static int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) {
             return 0;

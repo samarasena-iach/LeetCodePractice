@@ -1,9 +1,12 @@
+
 /**
  * LEETCODE - 704 - Binary Search
  * <p>
- * Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums.
+ * Given an array of integers nums which is sorted in ascending order, and an integer target,
+ * write a function to search target in nums.
  * If target exists, then return its index.
  * Otherwise, return -1.
+ * <p>
  * You must write an algorithm with O(log n) runtime complexity
  * <p>
  * Example 01
@@ -15,9 +18,14 @@
  * Input: nums = [-1,0,3,5,9,12], target = 2
  * Output: -1
  * Explanation: 2 does not exist in nums so return -1
+ * <p>
+ * Constraints:
+ * 1 <= nums.length <= 104
+ * -104 < nums[i], target < 104
+ * All the integers in nums are unique.
+ * nums is sorted in ascending order.
  **/
-
-public class LeetCode_704_BinarySearch {
+public class LeetCode_0704_BinarySearch {
 
     static int search(int[] nums, int target) {
         int ans = index(nums, target);

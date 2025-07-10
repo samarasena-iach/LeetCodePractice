@@ -19,10 +19,14 @@ import java.util.Arrays;
  * Example 03
  * Input: nums = [3,3], target = 6
  * Output: [0,1]
- * Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+ * <p>
+ * Constraints:
+ * 2 <= nums.length <= 104
+ * -109 <= nums[i] <= 109
+ * -109 <= target <= 109
+ * Only one valid answer exists.
  **/
-
-public class LeetCode_1_TwoSum {
+public class LeetCode_0001_Two_Sum {
     public static int[] twoSum(int[] nums, int target) {
         int n = nums.length;
         int[] pair = new int[2];
@@ -40,8 +44,8 @@ public class LeetCode_1_TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{3, 3};
-        int target = 6;
+        int[] nums = new int[]{2, 7, 11, 15};
+        int target = 9;
 
         System.out.println(Arrays.toString(twoSum(nums, target)));
     }
